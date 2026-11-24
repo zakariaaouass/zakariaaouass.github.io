@@ -985,16 +985,18 @@ form.addEventListener('submit',async e=>{
  if(!v('f-name')||!v('f-msg')){show('Please add your name and a short description of the project.',false);return}
  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('f-email'))){show('Please enter a valid email so I can reply.',false);document.getElementById('f-email').focus();return}
  send.disabled=true;send.textContent='Sending…';show('',true);
+ const slow=setTimeout(()=>show('Still sending, this can take a few seconds…',true),6000);
  try{
   const res=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({
    name:v('f-name'),email:v('f-email'),project_type:v('f-type'),timeline:v('f-budget'),message:v('f-msg'),
    _subject:'New project inquiry: '+v('f-type')+' from '+v('f-name'),_replyto:v('f-email'),_template:'table',_captcha:'false'})});
   const data=await res.json().catch(()=>({}));
+  clearTimeout(slow);
   if(!res.ok||String(data.success)==='false')throw new Error(data.message||'Request failed');
   form.reset();send.textContent='Sent ✓';show('Thanks, your message is on its way. I’ll reply within 24 hours.',true);
   setTimeout(()=>{send.textContent='Send message';send.disabled=false},4000);
  }catch(err){
-  send.disabled=false;send.textContent='Send message';
+  clearTimeout(slow);send.disabled=false;send.textContent='Send message';
   show('The message could not be sent. Check your connection and try again, or reach me on LinkedIn.',false);
  }
 });
