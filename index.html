@@ -6,51 +6,56 @@
 <style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Zakaria Aouass</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Zakaria Aouass, Data Engineer. SQL, Python, dbt, Spark, Kafka and dashboards. Available for freelance work.">
+<meta name="description" content="Zakaria Aouass, freelance data engineer. Pipelines, dbt models and dashboards with SQL, Python, Spark, Airflow, BigQuery and Databricks.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: Apple-style single column, wide quiet sections, one glass nav, product-page rhythm (headline, lede, showcase). */
+/* Layout: Apple product-page rhythm. Glass nav, big headline, then alternating quiet bands: services, flagship case study, more work, live demo, process, about, contact. */
 :root{
   --bg:#fbfbfd; --surface:#ffffff; --surface-2:#f2f2f6; --fg:#1d1d1f; --muted:#6e6e73;
   --line:rgba(29,29,31,.10); --accent:#0071e3; --accent-2:#5e5ce6; --accent-soft:rgba(0,113,227,.10);
-  --good:#1a8f4c; --bad:#d4341f; --glass:rgba(251,251,253,.72); --code-bg:#f5f5f7;
+  --good:#1a8f4c; --bad:#d4341f; --warn:#b25e00; --glass:rgba(251,251,253,.72); --code-bg:#f5f5f7;
+  --bronze:#a9662f; --silver:#7d8590; --gold:#b8860b;
   --shadow:0 1px 2px rgba(0,0,0,.04),0 8px 28px rgba(0,0,0,.06);
   --f-display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Segoe UI",Roboto,sans-serif;
   --f-text:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,sans-serif;
   --f-mono:"SF Mono","JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
-  --r-lg:28px; --r-md:18px; --r-sm:12px;
+  --r-lg:28px; --r-md:18px;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#000000; --surface:#141416; --surface-2:#1c1c1f; --fg:#f5f5f7; --muted:#a1a1a6;
   --line:rgba(255,255,255,.12); --accent:#2997ff; --accent-2:#7d7aff; --accent-soft:rgba(41,151,255,.16);
-  --good:#30d158; --bad:#ff6a5c; --glass:rgba(10,10,12,.66); --code-bg:#101012;
+  --good:#30d158; --bad:#ff6a5c; --warn:#ffb340; --glass:rgba(10,10,12,.66); --code-bg:#101012;
+  --bronze:#d08a52; --silver:#aab2bd; --gold:#e3b341;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45); color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#000000; --surface:#141416; --surface-2:#1c1c1f; --fg:#f5f5f7; --muted:#a1a1a6;
   --line:rgba(255,255,255,.12); --accent:#2997ff; --accent-2:#7d7aff; --accent-soft:rgba(41,151,255,.16);
-  --good:#30d158; --bad:#ff6a5c; --glass:rgba(10,10,12,.66); --code-bg:#101012;
+  --good:#30d158; --bad:#ff6a5c; --warn:#ffb340; --glass:rgba(10,10,12,.66); --code-bg:#101012;
+  --bronze:#d08a52; --silver:#aab2bd; --gold:#e3b341;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45); color-scheme:dark}
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 body{background:var(--bg);color:var(--fg);font-family:var(--f-text);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--glass)}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
-.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 section{padding-block:96px}
+.band{background:var(--surface-2)}
 h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;letter-spacing:-.025em}
-h2{font-size:clamp(34px,5vw,52px);line-height:1.06;font-weight:700}
+h2{font-size:clamp(34px,5vw,54px);line-height:1.05;font-weight:700}
 h3{font-size:21px;line-height:1.2;font-weight:600;letter-spacing:-.015em}
 p{margin:0}
 .eyebrow{font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.01em}
-.lede{font-size:clamp(19px,2.2vw,23px);line-height:1.4;color:var(--muted);max-width:40ch;font-weight:500}
+.lede{font-size:clamp(19px,2.2vw,23px);line-height:1.4;color:var(--muted);max-width:44ch;font-weight:500}
 .sec-head{display:grid;gap:14px;margin-bottom:48px}
 .muted{color:var(--muted)}
+.small{font-size:13px;color:var(--muted)}
 .tnum{font-variant-numeric:tabular-nums}
 
 /* Nav */
@@ -61,71 +66,145 @@ p{margin:0}
 .nav-links{display:flex;gap:22px}
 .nav-links a{color:var(--fg);font-size:13px;opacity:.8}
 .nav-links a:hover{opacity:1;text-decoration:none}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:980px;font:600 15px/1 var(--f-text);padding:12px 22px;border:0;cursor:pointer;transition:transform .15s,background .2s,opacity .2s;text-decoration:none!important;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:980px;font:600 15px/1 var(--f-text);padding:12px 22px;border:0;cursor:pointer;transition:transform .15s,background .2s,filter .2s;text-decoration:none!important;white-space:nowrap}
 .btn:active{transform:scale(.97)}
 .btn-primary{background:var(--accent);color:#fff}
 .btn-primary:hover{filter:brightness(1.08)}
 .btn-ghost{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
 .btn-ghost:hover{background:var(--accent-soft)}
 .btn-sm{padding:8px 14px;font-size:13px}
-@media (max-width:760px){.nav-links{display:none}}
+.link-arrow{font-weight:600;font-size:15px}
+@media (max-width:800px){.nav-links{display:none}}
 
 /* Hero */
-.hero{padding-block:88px 40px;text-align:center}
+.hero{padding-block:84px 56px;text-align:center}
 .hero .wrap{display:grid;justify-items:center;gap:22px}
 .status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;padding:7px 14px;border-radius:980px;background:var(--surface);box-shadow:var(--shadow);color:var(--fg)}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 0 0 var(--good);animation:pulse 2.4s infinite}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--good);animation:pulse 2.4s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--good) 60%,transparent)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
 .hero h1{font-size:clamp(46px,8.4vw,96px);line-height:1.02;font-weight:800;letter-spacing:-.045em}
 .grad{background:linear-gradient(100deg,var(--accent) 10%,var(--accent-2) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .lede{margin-inline:auto;max-width:36ch}
+.hero .lede{margin-inline:auto;max-width:38ch}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:6px}
-
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-radius:var(--r-lg);overflow:hidden;margin-top:56px;box-shadow:var(--shadow)}
-.stat{background:var(--surface);padding:26px 22px;display:grid;gap:4px;text-align:left}
-.stat b{font-family:var(--f-display);font-size:34px;letter-spacing:-.03em;line-height:1.1}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-radius:var(--r-lg);overflow:hidden;margin-top:50px;box-shadow:var(--shadow);width:100%}
+.stat{background:var(--surface);padding:24px 22px;display:grid;gap:4px;text-align:left;align-content:start}
+.stat b{font-family:var(--f-display);font-size:30px;letter-spacing:-.03em;line-height:1.1}
 .stat span{font-size:14px;color:var(--muted);line-height:1.35}
-@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stack{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;margin-top:6px;font-size:14px;font-weight:600;color:var(--muted)}
+.stack span{white-space:nowrap}
 
-/* Pipeline explorer */
-.pipe-card{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);overflow:hidden}
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.svc{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:30px;display:grid;gap:12px;align-content:start}
+.svc .ic{width:44px;height:44px;border-radius:14px;background:var(--accent-soft);display:grid;place-items:center}
+.svc .ic svg{width:22px;height:22px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc p{font-size:16px;color:var(--muted)}
+.svc ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px}
+.svc li{display:grid;grid-template-columns:18px 1fr;gap:8px}
+.svc li::before{content:"✓";color:var(--good);font-weight:700}
+.svc .proof{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+@media (max-width:760px){.svc-grid{grid-template-columns:1fr}}
+
+/* Case study */
+.case-head{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:end;margin-bottom:36px}
+.case-head .links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:820px){.case-head{grid-template-columns:1fr}.case-head .links{justify-content:flex-start}}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.res{background:var(--surface);border-radius:var(--r-md);padding:20px;box-shadow:var(--shadow);display:grid;gap:4px}
+.res b{font-family:var(--f-display);font-size:30px;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1.1}
+.res span{font-size:13px;color:var(--muted)}
+@media (max-width:820px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.card{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);overflow:hidden}
 .pipe-scroll{overflow-x:auto;border-bottom:1px solid var(--line)}
-.pipe{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;padding:34px 28px;min-width:680px}
-.pipe-track{position:absolute;left:12%;right:12%;top:62px;height:2px;background:var(--line);overflow:hidden}
+.orch{display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:600;color:var(--muted);padding:16px 0 0;min-width:760px}
+.orch i{display:block;height:1px;flex:0 1 180px;background:var(--line)}
+.pipe{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding:22px 22px 28px;min-width:760px}
+.pipe-track{position:absolute;left:9%;right:9%;top:50px;height:2px;background:var(--line);overflow:hidden}
 .pipe-track i{position:absolute;top:-1px;width:40px;height:4px;border-radius:4px;background:linear-gradient(90deg,transparent,var(--accent));animation:flow 2.6s linear infinite}
 .pipe-track i:nth-child(2){animation-delay:.9s}.pipe-track i:nth-child(3){animation-delay:1.8s}
 @keyframes flow{from{left:-40px}to{left:100%}}
-.stage{position:relative;z-index:1;display:grid;justify-items:center;gap:10px;background:none;border:0;cursor:pointer;color:var(--fg);font:inherit;padding:6px;border-radius:16px}
-.stage .ico{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:var(--surface-2);transition:transform .25s,background .25s,box-shadow .25s}
-.stage svg{width:26px;height:26px;stroke:var(--fg);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.stage{position:relative;z-index:1;display:grid;justify-items:center;gap:8px;background:none;border:0;cursor:pointer;color:var(--fg);font:inherit;padding:6px;border-radius:16px}
+.stage .ico{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:var(--surface-2);transition:transform .25s,background .25s,box-shadow .25s}
+.stage svg{width:25px;height:25px;stroke:var(--fg);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .stage b{font-size:15px;font-weight:600}
-.stage small{font-size:12px;color:var(--muted)}
+.stage small{font-size:12px;color:var(--muted);text-align:center}
 .stage:hover .ico{transform:translateY(-2px)}
 .stage[aria-selected="true"] .ico{background:var(--accent);box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 40%,transparent);transform:scale(1.06)}
 .stage[aria-selected="true"] svg{stroke:#fff}
-.pipe-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:0}
+.pipe-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr)}
 .pipe-text{padding:30px;display:grid;gap:12px;align-content:start}
 .pipe-text h3{font-size:24px}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-size:12px;font-weight:600;padding:5px 10px;border-radius:980px;background:var(--surface-2);color:var(--fg)}
 .tag.hot{background:var(--accent-soft);color:var(--accent)}
-.code{margin:0;background:var(--code-bg);border-left:1px solid var(--line);padding:24px 26px;font:13px/1.65 var(--f-mono);overflow-x:auto;color:var(--fg);min-height:260px;white-space:pre}
+.code{margin:0;background:var(--code-bg);border-left:1px solid var(--line);padding:24px 26px;font:13px/1.65 var(--f-mono);overflow-x:auto;color:var(--fg);min-height:300px;white-space:pre}
 .code .file{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-family:var(--f-text);font-weight:600}
-.k{color:var(--accent-2);font-weight:500}.s{color:var(--good)}.c{color:var(--muted);font-style:italic}.j{color:var(--accent)}.n{color:var(--bad)}
+.k{color:var(--accent-2);font-weight:500}.s{color:var(--good)}.c{color:var(--muted);font-style:italic}.j{color:var(--accent)}.n{color:var(--warn)}
 @media (max-width:820px){.pipe-detail{grid-template-columns:1fr}.code{border-left:0;border-top:1px solid var(--line);min-height:0}}
 
+.case-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:16px}
+@media (max-width:820px){.case-grid{grid-template-columns:1fr}}
+.panel{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:26px;display:grid;gap:16px;align-content:start;min-width:0}
+.panel-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.panel-h b{font-size:16px}
+.split{display:flex;height:34px;border-radius:10px;overflow:hidden;gap:2px}
+.split div{display:flex;align-items:center;padding-left:10px;font-size:12px;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden}
+.split-legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px}
+.split-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.mini{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mini div{background:var(--surface-2);border-radius:14px;padding:14px;display:grid;gap:2px}
+.mini b{font-family:var(--f-display);font-size:24px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.mini span{font-size:12px;color:var(--muted)}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:14px 0;font-weight:600;font-size:15px;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:20px;line-height:1;color:var(--muted);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 16px;font-size:15px;color:var(--muted)}
+.star{overflow-x:auto}
+.star svg{display:block;width:100%;min-width:420px;height:auto}
+.star rect{fill:var(--surface-2);stroke:var(--line)}
+.star rect.fact{fill:var(--accent-soft);stroke:var(--accent)}
+.star text{fill:var(--fg);font:12px var(--f-text)}
+.star text.t{font-weight:700;font-size:13px}
+.star text.m{fill:var(--muted);font:11px var(--f-mono)}
+.star line{stroke:var(--muted);stroke-width:1.2}
+
+/* More work */
+.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:820px){.work-grid{grid-template-columns:1fr}}
+.work{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:30px;display:grid;gap:14px;align-content:start}
+.work .kind{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.work h3{font-size:26px}
+.work p{font-size:16px;color:var(--muted)}
+.medallion{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.layer{border-radius:14px;padding:12px;display:grid;gap:2px;background:var(--surface-2);border-top:3px solid var(--c,var(--accent))}
+.layer b{font-size:13px}
+.layer span{font-size:12px;color:var(--muted);line-height:1.35}
+.layer em{font-style:normal;font-family:var(--f-display);font-weight:700;font-size:18px;font-variant-numeric:tabular-nums}
+@media (max-width:520px){.medallion{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.models{display:grid;gap:8px}
+.model{display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px;align-items:center;font-size:13px}
+.model .bar{height:8px;border-radius:6px;background:var(--surface-2);overflow:hidden}
+.model .bar i{display:block;height:100%;border-radius:6px;background:var(--accent)}
+.others{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:16px}
+.other{border:1px solid var(--line);border-radius:var(--r-md);padding:22px;display:grid;gap:8px;align-content:start;background:var(--surface)}
+.other h3{font-size:17px}
+.other p{font-size:14px;color:var(--muted)}
+@media (max-width:820px){.others{grid-template-columns:1fr}}
+
 /* Dashboard */
-#dashboard{background:var(--surface-2)}
 .dash{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:24px;display:grid;gap:20px}
 .dash-top{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;justify-content:space-between}
 .dash-title{display:grid;gap:2px}
 .dash-title b{font-size:19px;font-family:var(--f-display);letter-spacing:-.02em}
-.sample{font-size:12px;color:var(--muted)}
 .controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .seg{display:inline-flex;background:var(--surface-2);border-radius:10px;padding:3px}
 .seg button{border:0;background:none;font:600 13px/1 var(--f-text);color:var(--fg);padding:8px 12px;border-radius:8px;cursor:pointer}
 .seg button[aria-pressed="true"]{background:var(--surface);box-shadow:0 1px 3px rgba(0,0,0,.12)}
-select{font:600 13px/1 var(--f-text);color:var(--fg);background:var(--surface-2);border:0;border-radius:10px;padding:10px 30px 10px 12px;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;background-size:5px 5px;background-repeat:no-repeat;cursor:pointer}
+.dash select{font:600 13px/1 var(--f-text);color:var(--fg);background-color:var(--surface-2);border:0;border-radius:10px;padding:10px 30px 10px 12px;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;background-size:5px 5px;background-repeat:no-repeat;cursor:pointer}
 .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .kpi{border:1px solid var(--line);border-radius:var(--r-md);padding:16px 18px;display:grid;gap:6px;min-width:0}
 .kpi span{font-size:13px;color:var(--muted);font-weight:500}
@@ -134,9 +213,7 @@ select{font:600 13px/1 var(--f-text);color:var(--fg);background:var(--surface-2)
 .delta.up{color:var(--good);background:color-mix(in srgb,var(--good) 13%,transparent)}
 .delta.down{color:var(--bad);background:color-mix(in srgb,var(--bad) 13%,transparent)}
 .dash-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:12px}
-.panel{border:1px solid var(--line);border-radius:var(--r-md);padding:18px;min-width:0;display:grid;gap:12px;align-content:start}
-.panel-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
-.panel-h b{font-size:15px}
+.dpanel{border:1px solid var(--line);border-radius:var(--r-md);padding:18px;min-width:0;display:grid;gap:12px;align-content:start}
 .legend{display:flex;gap:14px;font-size:12px;color:var(--muted)}
 .legend i{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:middle;margin-right:6px;background:var(--accent)}
 .legend i.prev{background:none;border-top:2px dashed var(--muted);height:0}
@@ -146,14 +223,14 @@ select{font:600 13px/1 var(--f-text);color:var(--fg);background:var(--surface-2)
 .grid line{stroke:var(--line)}
 .tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12px;line-height:1.4;padding:8px 10px;border-radius:10px;transform:translate(-50%,-110%);white-space:nowrap;font-variant-numeric:tabular-nums;box-shadow:var(--shadow)}
 .bars{display:grid;gap:8px}
-.bar{display:grid;grid-template-columns:110px minmax(0,1fr) 72px;gap:10px;align-items:center;background:none;border:0;font:inherit;color:var(--fg);padding:6px 6px;border-radius:10px;cursor:pointer;text-align:left}
-.bar:hover{background:var(--surface-2)}
-.bar span{font-size:13px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.bar em{font-style:normal;font-size:13px;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
-.bar .fill{height:10px;border-radius:6px;background:var(--surface-2);overflow:hidden}
-.bar .fill i{display:block;height:100%;border-radius:6px;background:var(--accent);transition:width .5s cubic-bezier(.2,.8,.2,1)}
-.bars.filtered .bar:not(.on) .fill i{background:color-mix(in srgb,var(--muted) 45%,transparent)}
-.bar.on{background:var(--accent-soft)}
+.cbar{display:grid;grid-template-columns:110px minmax(0,1fr) 64px;gap:10px;align-items:center;background:none;border:0;font:inherit;color:var(--fg);padding:6px;border-radius:10px;cursor:pointer;text-align:left}
+.cbar:hover{background:var(--surface-2)}
+.cbar span{font-size:13px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cbar em{font-style:normal;font-size:13px;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.cbar .fill{height:10px;border-radius:6px;background:var(--surface-2);overflow:hidden}
+.cbar .fill i{display:block;height:100%;border-radius:6px;background:var(--accent);transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.bars.filtered .cbar:not(.on) .fill i{background:color-mix(in srgb,var(--muted) 45%,transparent)}
+.cbar.on{background:var(--accent-soft)}
 .tbl-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
 th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:8px 10px;border-bottom:1px solid var(--line)}
@@ -167,35 +244,19 @@ tbody tr.on td{background:var(--accent-soft)}
 .chip{display:inline-flex;align-items:center;gap:6px;border:0;background:var(--accent-soft);color:var(--accent);font:600 12px/1 var(--f-text);padding:7px 10px;border-radius:980px;cursor:pointer}
 .sql-box{margin:0;border-radius:var(--r-md);background:var(--code-bg);border:1px solid var(--line);padding:20px 22px;font:13px/1.65 var(--f-mono);overflow-x:auto;white-space:pre;color:var(--fg)}
 @media (max-width:900px){.dash-grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:420px){.kpi b{font-size:23px}.bar{grid-template-columns:88px minmax(0,1fr) 62px}.dash{padding:16px}}
+@media (max-width:420px){.kpi b{font-size:23px}.cbar{grid-template-columns:88px minmax(0,1fr) 56px}.dash{padding:16px}}
 
-/* Skills */
-.core{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:28px}
-.core-card{background:var(--surface);border-radius:var(--r-lg);padding:28px;box-shadow:var(--shadow);display:grid;gap:12px;align-content:start}
-.core-card .big{font-family:var(--f-display);font-size:44px;font-weight:800;letter-spacing:-.04em;line-height:1}
-.core-card:nth-child(1) .big{color:var(--accent)}
-.core-card:nth-child(2) .big{color:var(--accent-2)}
-.core-card:nth-child(3) .big{color:var(--good)}
-.core-card p{color:var(--muted);font-size:15px}
-.core-card ul{margin:0;padding-left:18px;font-size:14px;display:grid;gap:4px}
-@media (max-width:820px){.core{grid-template-columns:1fr}}
-.filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-.filter button{border:1px solid var(--line);background:var(--surface);color:var(--fg);font:600 13px/1 var(--f-text);padding:9px 14px;border-radius:980px;cursor:pointer}
-.filter button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
-.skill-grid{display:flex;flex-wrap:wrap;gap:8px}
-.skill{font-size:14px;font-weight:500;padding:9px 14px;border-radius:12px;background:var(--surface);border:1px solid var(--line);transition:opacity .25s,transform .25s}
-.skill.dim{opacity:.22;transform:scale(.97)}
+/* Process + FAQ */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:s;margin-bottom:56px}
+.step{border-top:2px solid var(--fg);padding-top:14px;display:grid;gap:6px;align-content:start}
+.step::before{counter-increment:s;content:"Step " counter(s);font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase}
+.step p{font-size:15px;color:var(--muted)}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.faq{max-width:760px}
+.faq h3{margin-bottom:12px}
 
-/* Projects */
-.proj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.proj{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:26px;display:grid;gap:12px;grid-template-rows:auto auto 1fr auto;transition:transform .25s}
-.proj:hover{transform:translateY(-3px)}
-.proj .kind{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.proj p{font-size:15px;color:var(--muted)}
-@media (max-width:900px){.proj-grid{grid-template-columns:1fr}}
-
-/* Experience */
-#experience{background:var(--surface-2)}
+/* About */
 .xp-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px}
 .timeline{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:30px;display:grid;gap:28px}
 .role{display:grid;grid-template-columns:14px minmax(0,1fr);gap:16px}
@@ -208,32 +269,28 @@ tbody tr.on td{background:var(--accent-soft)}
 .side{display:grid;gap:16px;align-content:start}
 .box{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:26px;display:grid;gap:14px}
 .ach{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;align-items:start}
-.ach .medal{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font:800 14px var(--f-display)}
+.ach .medal{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font:800 13px var(--f-display)}
 .ach b{display:block;font-size:15px}
 .ach span{font-size:13px;color:var(--muted)}
 @media (max-width:900px){.xp-grid{grid-template-columns:1fr}}
-
-/* Services */
-.svc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.svc{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:26px;display:grid;gap:10px;align-content:start}
-.svc p{font-size:15px;color:var(--muted)}
-.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:40px;counter-reset:s}
-.step{border-top:2px solid var(--fg);padding-top:14px;display:grid;gap:6px}
-.step::before{counter-increment:s;content:"Step " counter(s);font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase}
-.step p{font-size:14px;color:var(--muted)}
-@media (max-width:900px){.svc-grid,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:520px){.svc-grid,.steps{grid-template-columns:1fr}}
+.skills-wrap{margin-top:40px;display:grid;gap:16px}
+.filter{display:flex;flex-wrap:wrap;gap:8px}
+.filter button{border:1px solid var(--line);background:var(--surface);color:var(--fg);font:600 13px/1 var(--f-text);padding:9px 14px;border-radius:980px;cursor:pointer}
+.filter button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.skill-grid{display:flex;flex-wrap:wrap;gap:8px}
+.skill{font-size:14px;font-weight:500;padding:9px 14px;border-radius:12px;background:var(--surface);border:1px solid var(--line);transition:opacity .25s,transform .25s}
+.skill.core{border-color:var(--accent);color:var(--accent);font-weight:700}
+.skill.dim{opacity:.22;transform:scale(.97)}
 
 /* Contact */
 .contact{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:clamp(24px,5vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
 .contact h2{font-size:clamp(32px,4.4vw,48px)}
 .mail{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--surface-2);border-radius:14px;padding:12px 12px 12px 16px}
 .mail code{font:600 16px var(--f-mono);user-select:all;word-break:break-all;flex:1;min-width:0}
-.links{display:flex;flex-wrap:wrap;gap:10px}
+.clinks{display:flex;flex-wrap:wrap;gap:10px}
 form{display:grid;gap:12px}
 label{font-size:13px;font-weight:600;display:grid;gap:6px}
 input,textarea,form select{font:15px var(--f-text);color:var(--fg);background:var(--surface-2);border:1px solid transparent;border-radius:12px;padding:12px 14px;width:100%}
-form select{font-weight:500;padding-right:30px}
 input:focus,textarea:focus,form select:focus{outline:none;border-color:var(--accent);background:var(--surface)}
 textarea{resize:vertical;min-height:110px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -251,11 +308,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
   <div class="wrap">
     <a class="brand" href="#top">Zakaria Aouass</a>
     <div class="nav-links">
-      <a href="#pipeline">How I work</a>
-      <a href="#dashboard">Dashboard</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
       <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
     </div>
     <a class="btn btn-primary btn-sm" href="#contact">Hire me</a>
   </div>
@@ -263,32 +320,89 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
 
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="status"><span class="dot" aria-hidden="true"></span>Available for freelance and full-time work</span>
-    <p class="eyebrow">Data Engineer · Rabat, Morocco · Works remotely</p>
+    <span class="status"><span class="dot" aria-hidden="true"></span>Available for freelance projects · Replies within 24 hours</span>
+    <p class="eyebrow">Freelance Data Engineer</p>
     <h1>Raw data in.<br><span class="grad">Clear answers out.</span></h1>
-    <p class="lede">I'm Zakaria. I build reliable data pipelines with SQL, Python, dbt and Spark, and turn the results into dashboards your team will actually open.</p>
+    <p class="lede">I build data pipelines, dbt models and dashboards that run on schedule, test themselves and cost little to operate. Two years in production at Orange Business, now open to your project.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#contact">Start a project</a>
-      <a class="btn btn-ghost" href="#dashboard">Try the live dashboard</a>
+      <a class="btn btn-ghost" href="#work">See my work</a>
     </div>
     <div class="stats">
-      <div class="stat"><b class="tnum">2+ yrs</b><span>Production data engineering at Orange Business Maroc</span></div>
+      <div class="stat"><b class="tnum">4.5M+</b><span>Taxi trips processed each month by my NYC pipeline</span></div>
+      <div class="stat"><b class="tnum">2+ yrs</b><span>Production Spark and Kafka pipelines at Orange Business Maroc</span></div>
       <div class="stat"><b>DP‑203</b><span>Microsoft Certified Azure Data Engineer Associate</span></div>
-      <div class="stat"><b>Batch + stream</b><span>Spark and Kafka pipelines running in production at telecom scale</span></div>
-      <div class="stat"><b class="tnum">3</b><span>Working languages: English, French, Arabic</span></div>
+      <div class="stat"><b>GMT+1</b><span>Overlaps fully with Europe. English, French, Arabic</span></div>
+    </div>
+    <div class="stack" aria-label="Tools I use">
+      <span>SQL</span><span>Python</span><span>dbt</span><span>Airflow</span><span>Spark</span><span>BigQuery</span><span>Databricks</span><span>Delta Lake</span><span>Kafka</span><span>Docker</span><span>Looker Studio</span><span>Power BI</span>
     </div>
   </div>
 </header>
 
-<section id="pipeline">
+<section id="services" class="band">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">From source to dashboard</p>
-      <h2>Every stage of the pipeline, handled.</h2>
-      <p class="lede">Click a stage to see what I do there and a sample of the code I write for it.</p>
+      <p class="eyebrow">Services</p>
+      <h2>What I can build for you.</h2>
+      <p class="lede">Clear scope, a fixed quote per milestone, and code you own and can maintain.</p>
     </div>
-    <div class="pipe-card">
+    <div class="svc-grid">
+      <article class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10"/><path d="m11 4 3 3-3 3"/><path d="M20 17H10"/><path d="m13 14-3 3 3 3"/></svg></span>
+        <h3>Data pipelines &amp; ETL</h3>
+        <p>Move data from APIs, files and databases into one place, on schedule, without manual work.</p>
+        <ul><li>Airflow DAGs with retries and alerts</li><li>Spark or Python transformations with unit tests</li><li>Idempotent loads, so reruns never duplicate data</li></ul>
+        <p class="proof">Example: NYC Taxi pipeline, 4.5M+ rows a month into BigQuery.</p>
+      </article>
+      <article class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span>
+        <h3>dbt &amp; data warehouse</h3>
+        <p>Turn raw tables into a clean, documented model your analysts can trust.</p>
+        <ul><li>Staging and star‑schema marts in dbt</li><li>Incremental, partitioned tables to cut query cost</li><li>Tests that stop bad data before it reaches reports</li></ul>
+        <p class="proof">Works with BigQuery, Snowflake, PostgreSQL and Databricks.</p>
+      </article>
+      <article class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></span>
+        <h3>Dashboards &amp; reporting</h3>
+        <p>KPI dashboards that answer the questions your team asks every week.</p>
+        <ul><li>Looker Studio, Power BI or Python (Dash)</li><li>Metrics defined once in SQL, reused everywhere</li><li>Automated refresh, no more copy‑paste reports</li></ul>
+        <p class="proof">Try the interactive demo further down this page.</p>
+      </article>
+      <article class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 8v4l3 2"/></svg></span>
+        <h3>Lakehouse &amp; big data</h3>
+        <p>Scale past spreadsheets and single servers with Spark and Delta Lake.</p>
+        <ul><li>Bronze, silver and gold layers on Databricks</li><li>Batch and streaming with Spark and Kafka</li><li>Fix slow or failing Spark jobs</li></ul>
+        <p class="proof">Example: AFCON lakehouse on Databricks with Delta Lake.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="case-head">
+      <div style="display:grid;gap:14px">
+        <p class="eyebrow">Case study · Batch pipeline on Google Cloud</p>
+        <h2>NYC Taxi Data Pipeline</h2>
+        <p class="lede">Every month it downloads the public NYC taxi data, cleans it with Spark, loads it into BigQuery, models it with dbt and feeds a Looker Studio dashboard. Fully automated with Airflow.</p>
+      </div>
+      <div class="links">
+        <a class="btn btn-primary btn-sm" href="https://github.com/zakariaaouass/nyc-taxi-pipeline" target="_blank" rel="noopener">View code on GitHub</a>
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="res"><b>4,539,360</b><span>trips processed in one monthly run</span></div>
+      <div class="res"><b>$132.6M+</b><span>fare revenue modelled</span></div>
+      <div class="res"><b>4 tasks</b><span>ingest, transform, load, dbt build</span></div>
+      <div class="res"><b>&lt; $1</b><span>monthly cloud cost to run</span></div>
+    </div>
+
+    <div class="card">
       <div class="pipe-scroll">
+        <div class="orch"><i></i>Orchestrated by Apache Airflow · runs on the 1st of every month at 06:00<i></i></div>
         <div class="pipe" role="tablist" aria-label="Pipeline stages" id="stages">
           <div class="pipe-track" aria-hidden="true"><i></i><i></i><i></i></div>
         </div>
@@ -298,22 +412,130 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
         <pre class="code" id="stage-code"></pre>
       </div>
     </div>
+
+    <div class="case-grid">
+      <div class="panel">
+        <div class="panel-h"><b>What one month of data shows</b><span class="small">From the project's monthly run</span></div>
+        <div>
+          <div class="split" role="img" aria-label="Payment split: card 87.7%, cash 11.2%, other 1.1%">
+            <div style="flex:87.7;background:var(--accent)">Card 87.7%</div>
+            <div style="flex:11.2;background:var(--accent-2)">11.2%</div>
+            <div style="flex:1.1;background:var(--muted)"></div>
+          </div>
+          <div class="split-legend" style="margin-top:10px"><span><i style="background:var(--accent)"></i>Credit card</span><span><i style="background:var(--accent-2)"></i>Cash</span><span><i style="background:var(--muted)"></i>Other 1.1%</span></div>
+        </div>
+        <div class="mini">
+          <div><b>$19.62</b><span>Average fare</span></div>
+          <div><b>$3.64</b><span>Average tip</span></div>
+          <div><b>3.4 mi</b><span>Average distance</span></div>
+          <div><b>18 min</b><span>Average duration</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><b>Star schema in BigQuery</b><span class="small">Built with dbt</span></div>
+        <div class="star">
+          <svg viewBox="0 0 460 250" role="img" aria-label="Star schema: fct_trips linked to dim_date, dim_location and dim_payment_type">
+            <line x1="230" y1="62" x2="230" y2="92"/>
+            <line x1="152" y1="150" x2="120" y2="150"/>
+            <line x1="308" y1="150" x2="340" y2="150"/>
+            <rect x="160" y="14" width="140" height="48" rx="10"/>
+            <text class="t" x="230" y="34" text-anchor="middle">dim_date</text>
+            <text class="m" x="230" y="51" text-anchor="middle">date_day (PK)</text>
+            <rect class="fact" x="152" y="92" width="156" height="140" rx="12"/>
+            <text class="t" x="230" y="114" text-anchor="middle">fct_trips</text>
+            <text class="m" x="230" y="134" text-anchor="middle">trip_key (PK)</text>
+            <text class="m" x="230" y="152" text-anchor="middle">pickup_date (FK)</text>
+            <text class="m" x="230" y="170" text-anchor="middle">location_ids (FK)</text>
+            <text class="m" x="230" y="188" text-anchor="middle">payment_type (FK)</text>
+            <text class="m" x="230" y="206" text-anchor="middle">fare, tip, distance</text>
+            <text class="m" x="230" y="222" text-anchor="middle">incremental · by month</text>
+            <rect x="6" y="122" width="114" height="56" rx="10"/>
+            <text class="t" x="63" y="144" text-anchor="middle">dim_location</text>
+            <text class="m" x="63" y="162" text-anchor="middle">265 TLC zones</text>
+            <rect x="340" y="122" width="114" height="56" rx="10"/>
+            <text class="t" x="397" y="144" text-anchor="middle">dim_payment</text>
+            <text class="m" x="397" y="162" text-anchor="middle">TLC codes</text>
+          </svg>
+        </div>
+        <div>
+          <details><summary>Why Spark instead of pandas?</summary><p>A month is millions of rows. Spark processes it in parallel and writes Parquet directly, so the job never has to fit a whole month in one Python process.</p></details>
+          <details><summary>Why idempotent monthly loads?</summary><p>The loader deletes the month before appending it. Re-running a failed or corrected month never duplicates data.</p></details>
+          <details><summary>Why an incremental, partitioned fact table?</summary><p>dbt merges only the latest month instead of rebuilding history, and monthly partitions with clustering reduce BigQuery scan costs.</p></details>
+          <details><summary>Why dbt tests inside the DAG?</summary><p>A failing test fails the Airflow task, so bad data stops before it reaches the dashboard.</p></details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="more-work" class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">More work</p>
+      <h2>Lakehouses, machine learning and more.</h2>
+    </div>
+    <div class="work-grid">
+      <article class="work">
+        <span class="kind">Databricks · Delta Lake · Spark MLlib</span>
+        <h3>AFCON 2025 Lakehouse</h3>
+        <p>A medallion lakehouse on Databricks built from 25 years of Africa Cup of Nations match data. It produces team statistics and a Spark ML model that predicts home win, draw or away win.</p>
+        <div class="medallion">
+          <div class="layer" style="--c:var(--bronze)"><b>Bronze</b><span>Raw match history 2000–2025 as Delta</span></div>
+          <div class="layer" style="--c:var(--silver)"><b>Silver</b><em>2,077</em><span>clean AFCON matches</span></div>
+          <div class="layer" style="--c:var(--gold)"><b>Gold</b><span>Matches played and goals per team</span></div>
+          <div class="layer" style="--c:var(--accent)"><b>ML</b><em>1,709 / 368</em><span>train / test split</span></div>
+        </div>
+        <div class="tags"><span class="tag hot">PySpark</span><span class="tag">Databricks</span><span class="tag">Delta Lake</span><span class="tag">Spark MLlib</span><span class="tag hot">SQL</span></div>
+        <a class="link-arrow" href="https://github.com/zakariaaouass/afcon-databricks-data-engineering" target="_blank" rel="noopener">View notebooks on GitHub ›</a>
+      </article>
+      <article class="work">
+        <span class="kind">Deep learning · Web app</span>
+        <h3>Visual Insights: electricity price forecasting</h3>
+        <p>A Plotly Dash web app with user accounts that forecasts electricity prices from multivariate data (demand, weather, time). It compares three deep learning architectures trained on the same dataset.</p>
+        <div class="medallion" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+          <div class="layer"><b>Hybrid CNN‑LSTM</b><span>Convolutions find patterns across features, LSTM learns over time</span></div>
+          <div class="layer" style="--c:var(--accent-2)"><b>Stacked LSTM</b><span>Deeper recurrent baseline</span></div>
+          <div class="layer" style="--c:var(--muted)"><b>Vanilla LSTM</b><span>Simple recurrent baseline</span></div>
+        </div>
+        <div class="tags"><span class="tag hot">Python</span><span class="tag">TensorFlow / Keras</span><span class="tag">Plotly Dash</span><span class="tag">MySQL</span></div>
+        <a class="link-arrow" href="https://github.com/zakariaaouass/VISUAL_insights" target="_blank" rel="noopener">View on GitHub ›</a>
+      </article>
+    </div>
+    <div class="others">
+      <article class="other">
+        <span class="small">Cloud security · Azure</span>
+        <h3>Entra ID IAM Lab</h3>
+        <p>Role‑based access, least privilege, Conditional Access and access reviews for a three‑team company, fully documented.</p>
+        <a class="link-arrow" href="https://github.com/zakariaaouass/entra-id-iam-lab" target="_blank" rel="noopener">View ›</a>
+      </article>
+      <article class="other">
+        <span class="small">Docker · CI/CD</span>
+        <h3>Containerised profile app</h3>
+        <p>Node.js and MongoDB app running in Docker Compose, with GitHub Actions that build and publish the image.</p>
+        <a class="link-arrow" href="https://github.com/zakariaaouass/User_profile_app" target="_blank" rel="noopener">View ›</a>
+      </article>
+      <article class="other">
+        <span class="small">React · Flutter</span>
+        <h3>Quran reader</h3>
+        <p>A web app built with React and Vite, deployed automatically with GitHub Actions, plus a Flutter mobile version.</p>
+        <a class="link-arrow" href="https://zakariaaouass.github.io/quran-app/" target="_blank" rel="noopener">Open the live app ›</a>
+      </article>
+    </div>
   </div>
 </section>
 
 <section id="dashboard">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Dashboards</p>
-      <h2>Numbers people can explore, not just read.</h2>
-      <p class="lede">A working example. Change the period, region or channel, click a category or a city to cross‑filter, and open the dbt model behind it.</p>
+      <p class="eyebrow">Interactive demo</p>
+      <h2>Dashboards people explore, not just read.</h2>
+      <p class="lede">The kind of dashboard I deliver. Change the period, city or channel, click a category or a city to cross‑filter, and open the dbt model behind it.</p>
     </div>
-
     <div class="dash" id="dash">
       <div class="dash-top">
         <div class="dash-title">
           <b>Retail sales overview</b>
-          <span class="sample">Sample data for a fictional Moroccan online retailer · figures in MAD</span>
+          <span class="small">Sample data for a fictional Moroccan online retailer · figures in MAD</span>
         </div>
         <div class="controls">
           <div class="seg" role="group" aria-label="Period" id="period">
@@ -321,7 +543,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
             <button type="button" data-v="12" aria-pressed="true">12M</button>
             <button type="button" data-v="24">24M</button>
           </div>
-          <select id="region" aria-label="Region"></select>
+          <select id="region" aria-label="City"></select>
           <select id="channel" aria-label="Channel">
             <option value="all">All channels</option>
             <option value="web">Website</option>
@@ -329,28 +551,21 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
           </select>
         </div>
       </div>
-
       <div class="kpis" id="kpis"></div>
-
       <div class="dash-grid">
-        <div class="panel">
-          <div class="panel-h">
-            <b>Monthly revenue</b>
-            <div class="legend"><span><i></i>This period</span><span><i class="prev"></i>Previous period</span></div>
-          </div>
+        <div class="dpanel">
+          <div class="panel-h"><b>Monthly revenue</b><div class="legend"><span><i></i>This period</span><span><i class="prev"></i>Previous period</span></div></div>
           <div class="chart" id="line"></div>
         </div>
-        <div class="panel">
-          <div class="panel-h"><b>Revenue by category</b><span class="sample">Click to filter</span></div>
+        <div class="dpanel">
+          <div class="panel-h"><b>Revenue by category</b><span class="small">Click to filter</span></div>
           <div class="bars" id="bars"></div>
         </div>
       </div>
-
-      <div class="panel">
-        <div class="panel-h"><b>Cities</b><span class="sample">Click a row to filter</span></div>
+      <div class="dpanel">
+        <div class="panel-h"><b>Cities</b><span class="small">Click a row to filter</span></div>
         <div class="tbl-wrap"><table id="tbl"></table></div>
       </div>
-
       <div class="dash-foot">
         <div class="chips" id="chips"></div>
         <button class="btn btn-ghost btn-sm" type="button" id="sql-toggle" aria-expanded="false">Show the dbt model</button>
@@ -360,71 +575,34 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
   </div>
 </section>
 
-<section id="skills">
+<section id="process" class="band">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Skills</p>
-      <h2>Three core tools. A full stack behind them.</h2>
+      <p class="eyebrow">How we work together</p>
+      <h2>Simple process. No surprises.</h2>
     </div>
-    <div class="core">
-      <div class="core-card">
-        <span class="big">SQL</span>
-        <p>The language of every warehouse I touch.</p>
-        <ul><li>Window functions, CTEs, complex joins</li><li>Query tuning on Hive, PostgreSQL, Oracle</li><li>Clean, tested analytics models</li></ul>
-      </div>
-      <div class="core-card">
-        <span class="big">Python</span>
-        <p>Ingestion, automation and analysis.</p>
-        <ul><li>API and web ingestion (Requests, BeautifulSoup)</li><li>pandas, NumPy, PySpark</li><li>Airflow DAGs and ML with scikit‑learn</li></ul>
-      </div>
-      <div class="core-card">
-        <span class="big">dbt</span>
-        <p>Modular, documented, tested transformations.</p>
-        <ul><li>Staging, intermediate and mart layers</li><li>Incremental models and snapshots</li><li>Tests, docs and lineage your team can trust</li></ul>
-      </div>
+    <div class="steps">
+      <div class="step"><h3>Free call</h3><p>20 minutes to understand your data, your tools and the decision the data should support.</p></div>
+      <div class="step"><h3>Plan &amp; quote</h3><p>A written plan with milestones, timeline and a fixed price for each milestone.</p></div>
+      <div class="step"><h3>Build</h3><p>Working results early, progress updates every few days, and code in your repository.</p></div>
+      <div class="step"><h3>Hand over</h3><p>Documentation, a recorded walkthrough, and a support window for fixes after delivery.</p></div>
     </div>
-    <div class="filter" role="group" aria-label="Filter skills" id="skill-filter"></div>
-    <div class="skill-grid" id="skill-grid"></div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Projects</p>
-      <h2>Built end to end.</h2>
-    </div>
-    <div class="proj-grid">
-      <article class="proj">
-        <span class="kind">Machine learning · Dashboard</span>
-        <h3>Electricity price forecasting</h3>
-        <p>A web app that forecasts electricity prices from multivariate time series with a hybrid CNN‑LSTM model, compared against ARIMA and SARIMA baselines and tuned with Optuna.</p>
-        <div class="tags"><span class="tag hot">Python</span><span class="tag">TensorFlow</span><span class="tag">Plotly Dash</span><span class="tag">Optuna</span></div>
-        <a href="https://github.com/zakariaaouass/VISUAL_insights" target="_blank" rel="noopener">View on GitHub ›</a>
-      </article>
-      <article class="proj">
-        <span class="kind">Streaming · Big data</span>
-        <h3>Real‑time log analysis</h3>
-        <p>Simulates, ingests and analyzes live server log streams to detect anomalies and understand user behaviour, with complex Hive queries and Grafana monitoring.</p>
-        <div class="tags"><span class="tag">Flume</span><span class="tag">HBase</span><span class="tag">Hive</span><span class="tag">Grafana</span><span class="tag">Docker</span></div>
-        <a href="https://github.com/zakariaaouass" target="_blank" rel="noopener">View on GitHub ›</a>
-      </article>
-      <article class="proj">
-        <span class="kind">ETL · Cloud</span>
-        <h3>Weather data pipeline</h3>
-        <p>An ETL pipeline on AWS EC2 that extracts weather data from an API, transforms it and loads it on a schedule, orchestrated with Airflow DAGs.</p>
-        <div class="tags"><span class="tag">Airflow</span><span class="tag">AWS EC2</span><span class="tag hot">Python</span><span class="tag hot">SQL</span></div>
-        <a href="https://github.com/zakariaaouass" target="_blank" rel="noopener">View on GitHub ›</a>
-      </article>
+    <div class="faq">
+      <h3>Questions clients ask</h3>
+      <details><summary>What do you need from me to start?</summary><p>A sample of the data or read‑only access to the source, and a short description of the questions you want answered. I can sign an NDA if you need one.</p></details>
+      <details><summary>Can you work with the tools we already use?</summary><p>Yes. I adapt to your stack: BigQuery, Snowflake, Databricks, PostgreSQL, Azure or AWS, with Airflow, dbt, Power BI or Looker Studio.</p></details>
+      <details><summary>Which time zone are you in?</summary><p>Morocco (GMT+1). My working day overlaps fully with the UK and Europe and with mornings on the US East Coast.</p></details>
+      <details><summary>How do you charge?</summary><p>Fixed price per milestone for defined projects, or hourly for ongoing support. You only pay for a milestone once you have approved it.</p></details>
+      <details><summary>Which languages do you work in?</summary><p>English, French and Arabic, for meetings, documentation and code comments.</p></details>
     </div>
   </div>
 </section>
 
-<section id="experience">
+<section id="about">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Experience</p>
-      <h2>Production pipelines at telecom scale.</h2>
+      <p class="eyebrow">About</p>
+      <h2>Production experience at telecom scale.</h2>
     </div>
     <div class="xp-grid">
       <div class="timeline">
@@ -434,11 +612,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
             <span class="when">Oct 2024 – Present · Rabat</span>
             <h3>Data Engineer, Orange Business Maroc</h3>
             <ul>
-              <li>Build and optimize batch and streaming ingestion pipelines in Spark (Scala).</li>
+              <li>Build and optimise batch and streaming ingestion pipelines in Spark (Scala).</li>
               <li>Run real‑time processing with Kafka, Elasticsearch and YARN.</li>
-              <li>Keep pipelines stable by monitoring and troubleshooting Spark jobs.</li>
-              <li>Automate workflows with Oozie, Hue and HDFS.</li>
-              <li>Ship in Agile/Scrum with Jira and Confluence.</li>
+              <li>Keep production pipelines stable by monitoring and troubleshooting Spark jobs.</li>
+              <li>Automate workflows with Oozie, Hue and HDFS, in an Agile/Scrum team.</li>
             </ul>
           </div>
         </div>
@@ -447,9 +624,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
           <div>
             <span class="when">Mar 2024 – Sep 2024 · Rabat</span>
             <h3>Big Data Engineer Intern, Orange Business Maroc</h3>
-            <ul>
-              <li>Final‑year project on Spark ingestion and processing pipelines, then hired full time.</li>
-            </ul>
+            <ul><li>Final‑year project on Spark ingestion pipelines, then hired full time.</li></ul>
           </div>
         </div>
         <div class="role">
@@ -457,45 +632,24 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
           <div>
             <span class="when">2019 – 2024 · Oujda</span>
             <h3>Engineering degree, Data Science &amp; Cloud Computing</h3>
-            <p class="muted" style="font-size:15px;margin-top:6px">National School of Applied Sciences (ENSA Oujda), including two years of preparatory classes.</p>
+            <p class="muted" style="font-size:15px;margin-top:6px">National School of Applied Sciences (ENSA Oujda).</p>
           </div>
         </div>
       </div>
       <div class="side">
         <div class="box">
-          <h3>Achievements</h3>
-          <div class="ach"><span class="medal">3rd</span><div><b>NASA Space Apps Challenge</b><span>Innovation Hackathon, 2022</span></div></div>
+          <h3>Certifications &amp; awards</h3>
           <div class="ach"><span class="medal">AZ</span><div><b>Azure Data Engineer Associate</b><span>Microsoft certification DP‑203</span></div></div>
           <div class="ach"><span class="medal">CO</span><div><b>Spark, Hadoop &amp; Snowflake for Data Engineering</b><span>Coursera</span></div></div>
           <div class="ach"><span class="medal">IBM</span><div><b>Agile Development and Scrum</b><span>IBM</span></div></div>
-        </div>
-        <div class="box">
-          <h3>Languages</h3>
-          <p class="muted" style="font-size:15px">Arabic (native) · French (fluent) · English (fluent)</p>
+          <div class="ach"><span class="medal">3rd</span><div><b>NASA Space Apps Challenge</b><span>Innovation Hackathon, 2022</span></div></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">For clients</p>
-      <h2>What I can build for you.</h2>
-      <p class="lede">Freelance projects, contracts or a full‑time role. Clear scope, steady updates, clean handover.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc"><h3>Data pipelines</h3><p>Batch or real‑time ingestion from APIs, databases and files, with Python, Spark, Kafka and Airflow.</p></div>
-      <div class="svc"><h3>dbt &amp; warehouse</h3><p>Modeling, testing and documenting your data in dbt on Snowflake, BigQuery, Postgres or Azure.</p></div>
-      <div class="svc"><h3>Dashboards &amp; BI</h3><p>KPI dashboards in Power BI or Python that answer the questions your team actually asks.</p></div>
-      <div class="svc"><h3>Cleanup &amp; automation</h3><p>Fix messy spreadsheets, broken scripts and slow SQL. Automate the reports you rebuild every week.</p></div>
-    </div>
-    <div class="steps">
-      <div class="step"><h3>Scope</h3><p>A short call to understand your data and the decision it should support.</p></div>
-      <div class="step"><h3>Plan</h3><p>A written plan with milestones, timeline and a fixed quote.</p></div>
-      <div class="step"><h3>Build</h3><p>Working results early, with progress updates every few days.</p></div>
-      <div class="step"><h3>Hand over</h3><p>Documented code, a walkthrough, and support after delivery.</p></div>
+    <div class="skills-wrap">
+      <h3>Toolbox</h3>
+      <div class="filter" role="group" aria-label="Filter skills" id="skill-filter"></div>
+      <div class="skill-grid" id="skill-grid"></div>
     </div>
   </div>
 </section>
@@ -506,12 +660,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
       <div style="display:grid;gap:18px;align-content:start">
         <p class="eyebrow">Contact</p>
         <h2>Have data that should be working harder?</h2>
-        <p class="muted">Tell me about your project. I reply within 24 hours.</p>
+        <p class="muted">Tell me about your project. I reply within 24 hours with questions or a first plan.</p>
         <div class="mail">
           <code id="email">zakariaaouass22@gmail.com</code>
           <button class="btn btn-primary btn-sm" type="button" id="copy-email">Copy</button>
         </div>
-        <div class="links">
+        <div class="clinks">
           <a class="btn btn-ghost btn-sm" href="mailto:zakariaaouass22@gmail.com">Send an email</a>
           <a class="btn btn-ghost btn-sm" href="https://www.linkedin.com/in/zakaria-aouass-182458232/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn btn-ghost btn-sm" href="https://github.com/zakariaaouass" target="_blank" rel="noopener">GitHub</a>
@@ -522,22 +676,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
           <label for="f-name">Your name<input id="f-name" name="name" autocomplete="name" placeholder="Jane Doe"></label>
           <label for="f-type">Project type
             <select id="f-type" name="type">
-              <option>Data pipeline</option>
+              <option>Data pipeline / ETL</option>
               <option>dbt / data warehouse</option>
-              <option>Dashboard / BI</option>
+              <option>Dashboard / reporting</option>
+              <option>Databricks / Spark</option>
               <option>Data cleanup / automation</option>
-              <option>Full-time role</option>
               <option>Something else</option>
             </select>
           </label>
         </div>
-        <label for="f-msg">What do you need?<textarea id="f-msg" name="msg" placeholder="Our sales data lives in 3 spreadsheets and a Postgres database. We want one weekly dashboard..."></textarea></label>
+        <label for="f-msg">What do you need?<textarea id="f-msg" name="msg" placeholder="Our sales data lives in spreadsheets and a Postgres database. We want one weekly dashboard..."></textarea></label>
         <div class="form-actions">
           <a class="btn btn-primary" id="send-brief" href="mailto:zakariaaouass22@gmail.com">Email this brief</a>
           <button class="btn btn-ghost" type="button" id="copy-brief">Copy brief</button>
           <span class="toast" id="toast" aria-live="polite"></span>
         </div>
-        <p class="sample">If the email button doesn't open your mail app, copy the brief and send it to the address on the left.</p>
+        <p class="small">If the email button doesn't open your mail app, copy the brief and send it to the address on the left.</p>
       </form>
     </div>
   </div>
@@ -545,8 +699,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Zakaria Aouass · Data Engineer</span>
-    <span>Dashboard figures above are sample data.</span>
+    <span>© 2026 Zakaria Aouass · Freelance Data Engineer · Rabat, Morocco</span>
+    <span>The retail dashboard uses sample data. Project figures come from the linked repositories.</span>
   </div>
 </footer>
 
@@ -554,126 +708,161 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
 (function(){
 /* ---------- tiny syntax highlighter ---------- */
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-const KW='select|from|where|group|by|order|with|as|join|left|on|and|or|case|when|then|else|end|sum|count|distinct|over|partition|def|return|import|for|in|if|val|object|models|tests|columns|name|not_null|unique|coalesce|is|null|insert|into|create|table';
-const RX=new RegExp("(--[^\\n]*|#[^\\n]*|//[^\\n]*)|('[^'\\n]*'|\"[^\"\\n]*\")|(\\{\\{[^}]*\\}\\}|\\{%[^%]*%\\})|\\b("+KW+")\\b|(\\b\\d+(?:\\.\\d+)?\\b)","gi");
+const KW='select|from|where|group|by|order|with|as|join|left|on|and|or|case|when|then|else|end|sum|count|distinct|over|partition|qualify|def|return|import|for|in|if|not|with|models|tests|columns|name|unique|not_null|relationships|coalesce|is|null|delete|true|false|none|try|except|raise';
+const RX=new RegExp("(--[^\\n]*|#[^\\n]*)|('[^'\\n]*'|\"[^\"\\n]*\")|(\\{\\{[^}]*\\}\\}|\\{%[^%]*%\\})|\\b("+KW+")\\b|(\\b\\d+(?:\\.\\d+)?\\b)","gi");
 function hl(src){let out='',last=0;src.replace(RX,(m,c,s,j,k,n,i)=>{out+=esc(src.slice(last,i));const cls=c?'c':s?'s':j?'j':k?'k':'n';out+='<span class="'+cls+'">'+esc(m)+'</span>';last=i+m.length;return m});return out+esc(src.slice(last));}
 
-/* ---------- pipeline explorer ---------- */
+/* ---------- NYC pipeline explorer (code from the repository) ---------- */
 const ICONS={
- ingest:'<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/>',
- process:'<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/>',
+ schedule:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+ clean:'<path d="M4 5h16l-6 7v6l-4 2v-8L4 5Z"/>',
+ load:'<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/>',
  model:'<path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/>',
- store:'<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/>',
- viz:'<path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/>'
+ test:'<path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/>',
+ report:'<path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/>'
 };
 const STAGES=[
- {id:'ingest',name:'Ingest',sub:'APIs · Kafka · files',title:'Bring every source in, reliably.',
-  body:'I pull data from REST APIs, databases, files and event streams, with retries, logging and schema checks so a bad source never breaks the pipeline downstream.',
-  tags:['Python','Kafka','Requests','Airflow'],file:'ingest_orders.py',
-  code:`import requests, pandas as pd
-from datetime import date
+ {id:'schedule',name:'Schedule',sub:'Airflow',title:'One DAG runs everything.',
+  body:'Airflow triggers the pipeline on the 1st of each month and processes the month two months earlier, because the city publishes data with a delay. Each task has a timeout and a retry. Settings come from environment variables, nothing is hard‑coded.',
+  tags:['Airflow','Python','Docker Compose'],file:'airflow/dags/nyc_taxi_pipeline.py',
+  code:`with DAG(
+    dag_id="nyc_taxi_batch_pipeline",
+    default_args={"retries": 1, "retry_delay": timedelta(minutes=2)},
+    schedule_interval="0 6 1 * *",      # 1st of every month, 06:00
+    catchup=False,
+    max_active_runs=1,
+) as dag:
 
-def extract_orders(day: date) -> pd.DataFrame:
-    # Paginate the API and keep raw JSON for replay
-    rows, page = [], 1
-    while True:
-        r = requests.get(API_URL, params={"date": day, "page": page}, timeout=30)
-        r.raise_for_status()
-        batch = r.json()["orders"]
-        if not batch:
-            break
-        rows += batch
-        page += 1
-    return pd.DataFrame(rows)`},
- {id:'process',name:'Process',sub:'Spark · Scala · Python',title:'Clean and transform at scale.',
-  body:'At Orange Business I run Spark jobs on Hadoop that process telecom data in batch and real time. I tune partitions and joins so jobs finish on time and stay stable.',
-  tags:['Spark','Scala','PySpark','YARN','Hive'],file:'EventsJob.scala',
-  code:`object EventsJob {
-  def run(spark: SparkSession, day: String): Unit = {
-    val events = spark.read.parquet(s"/raw/events/dt=$day")
+    ingest_raw = BashOperator(task_id="ingest_raw_to_gcs", ...)
+    transform  = BashOperator(task_id="transform_to_processed", ...)
+    load_bq    = BashOperator(task_id="load_to_bigquery", ...)
 
-    val clean = events
-      .filter(col("msisdn").isNotNull)
-      .dropDuplicates("event_id")
-      .withColumn("event_ts", to_timestamp(col("ts")))
+    # dbt build = seeds + models + tests in dependency order.
+    # A failing test fails this task, so bad data never reaches the marts.
+    dbt_build  = BashOperator(task_id="dbt_build", ...)
 
-    // Partition by day for fast downstream reads
-    clean.write.mode("overwrite")
-      .partitionBy("dt")
-      .saveAsTable("curated.events")
-  }
-}`},
- {id:'model',name:'Model',sub:'dbt · SQL',title:'Turn tables into trusted metrics.',
-  body:'I model data in dbt layers (staging, intermediate, marts) with tests on every key column, so the numbers in your dashboard match the numbers in finance.',
-  tags:['dbt','SQL','Jinja','Tests'],file:'models/marts/fct_orders.sql',
-  code:`{{ config(materialized='incremental', unique_key='order_id') }}
+    ingest_raw >> transform >> load_bq >> dbt_build`},
+ {id:'clean',name:'Clean',sub:'PySpark',title:'Business rules, unit tested.',
+  body:'A pure PySpark function applies explicit types and the city’s own rules: minimum fare, legal passenger limit, realistic trip durations, and only trips inside the processed month. Because it has no I/O, it is covered by pytest.',
+  tags:['PySpark','Python','pytest'],file:'spark/jobs/transform.py',
+  code:`MIN_FARE = 3.0            # NYC minimum metered fare
+MAX_PASSENGERS = 6        # NYC yellow cab legal limit
 
-with orders as (
-    select * from {{ ref('stg_orders') }}
-    {% if is_incremental() %}
-    where updated_at > (select max(updated_at) from {{ this }})
-    {% endif %}
+def clean_trips(df: DataFrame, year: int, month: int) -> DataFrame:
+    """Pure cleaning logic (no I/O) so it can be unit tested."""
+    start, end = month_bounds(year, month)
+
+    df = df.dropna(subset=["tpep_pickup_datetime", "tpep_dropoff_datetime",
+                           "trip_distance", "fare_amount"])
+
+    return df.filter(
+        (F.col("trip_distance") > 0)
+        & (F.col("fare_amount") >= MIN_FARE)
+        & F.col("passenger_count").between(1, MAX_PASSENGERS)
+        & F.col("trip_duration_minutes").between(1, 180)
+        # keep only this month so a rerun replaces exactly this month
+        & (F.col("tpep_pickup_datetime") >= F.lit(start))
+        & (F.col("tpep_pickup_datetime") < F.lit(end))
+    )`},
+ {id:'load',name:'Load',sub:'GCS → BigQuery',title:'Safe to re-run, every time.',
+  body:'Clean Parquet lands in Cloud Storage, then loads into BigQuery. The loader deletes the month first and appends it again, so a failed or corrected run never creates duplicates.',
+  tags:['BigQuery','Cloud Storage','Python'],file:'spark/jobs/load_bq.py',
+  code:`def load_to_bigquery(processed_bucket, year, month, project, dataset, table, location):
+    """Idempotent monthly load: rerunning a month replaces it."""
+    start, end = month_bounds(year, month)
+
+    # 1) Remove any rows already loaded for this month
+    client.query(
+        f"DELETE FROM \`{table_id}\` "
+        "WHERE tpep_pickup_datetime >= @start AND tpep_pickup_datetime < @end",
+        job_config=bigquery.QueryJobConfig(query_parameters=[...]),
+    ).result()
+
+    # 2) Append the month
+    job_config = bigquery.LoadJobConfig(
+        source_format=bigquery.SourceFormat.PARQUET,
+        write_disposition=bigquery.WriteDisposition.WRITE_APPEND,
+    )
+    client.load_table_from_uri(gcs_uri, table_id, job_config=job_config).result()`},
+ {id:'model',name:'Model',sub:'dbt',title:'An incremental star schema.',
+  body:'dbt turns the raw table into a fact table and three dimensions. The fact table is incremental: it merges only the latest month, partitioned by month and clustered by location and payment type to keep BigQuery costs low.',
+  tags:['dbt','SQL','BigQuery'],file:'dbt/nyc_taxi/models/marts/fct_trips.sql',
+  code:`{{ config(
+    materialized='incremental',
+    unique_key='trip_key',
+    incremental_strategy='merge',
+    partition_by={'field': 'pickup_datetime', 'data_type': 'timestamp', 'granularity': 'month'},
+    cluster_by=['pickup_location_id', 'payment_type']
+) }}
+
+-- Grain: one row per taxi trip.
+SELECT
+    trip_key, pickup_datetime, pickup_date, pickup_hour,
+    pickup_location_id, dropoff_location_id, payment_type,
+    passenger_count, trip_distance, trip_duration_minutes,
+    fare_amount, tip_amount, tolls_amount, total_amount, cost_per_mile
+FROM {{ ref('stg_yellow_taxi') }}
+
+{% if is_incremental() %}
+WHERE pickup_datetime >= (
+    SELECT TIMESTAMP_TRUNC(MAX(pickup_datetime), MONTH) FROM {{ this }}
 )
-
-select
-    order_id,
-    customer_id,
-    city,
-    channel,
-    order_date,
-    sum(quantity * unit_price) as revenue
-from orders
-group by 1, 2, 3, 4, 5`},
- {id:'store',name:'Store',sub:'Warehouse · Lake',title:'Organised storage, quick to query.',
-  body:'Curated data lands in a warehouse or lake with clear naming, partitions and documentation. I work with Hive/HDFS, PostgreSQL, Oracle, SQL Server and cloud warehouses.',
-  tags:['Snowflake','PostgreSQL','Hive','Azure'],file:'models/marts/schema.yml',
+{% endif %}`},
+ {id:'test',name:'Test',sub:'dbt tests',title:'Bad data stops the pipeline.',
+  body:'Every key is checked for uniqueness and nulls, and every foreign key is checked against its dimension. Tests run inside the Airflow DAG, so a failure stops the run before the dashboard updates.',
+  tags:['dbt','Data quality'],file:'dbt/nyc_taxi/models/marts/schema.yml',
   code:`models:
-  - name: fct_orders
-    description: One row per order, revenue in MAD
+  - name: fct_trips
+    description: "Trip fact table (grain: one row per trip)."
     columns:
-      - name: order_id
+      - name: trip_key
         tests: [unique, not_null]
-      - name: channel
+      - name: pickup_location_id
         tests:
-          - accepted_values:
-              values: ['web', 'app']
-      - name: revenue
+          - not_null
+          - relationships:
+              to: ref('dim_location')
+              field: location_id
+      - name: payment_type
+        tests:
+          - relationships:
+              to: ref('dim_payment_type')
+              field: payment_type
+      - name: total_amount
         tests: [not_null]`},
- {id:'viz',name:'Visualize',sub:'Power BI · Dash',title:'Dashboards people actually use.',
-  body:'The last mile matters most. I build focused dashboards with the KPIs that drive decisions, filters that answer follow‑up questions, and numbers that trace back to their source.',
-  tags:['Power BI','Plotly Dash','SQL','Python'],file:'kpis.sql',
-  code:`-- Revenue this month vs same month last year
-select
-    city,
-    sum(case when order_month = '2026-10' then revenue end) as rev_now,
-    sum(case when order_month = '2025-10' then revenue end) as rev_ly,
-    round(100.0 * (sum(case when order_month = '2026-10' then revenue end)
-        / nullif(sum(case when order_month = '2025-10' then revenue end), 0) - 1), 1)
-        as yoy_pct
-from {{ ref('fct_orders_monthly') }}
-group by city
-order by rev_now desc`}
+ {id:'report',name:'Report',sub:'Looker Studio',title:'Answers for the business.',
+  body:'The marts feed a Looker Studio dashboard with trips, revenue, fares and payment mix by borough and time. The same SQL can be run directly in BigQuery.',
+  tags:['Looker Studio','SQL','BigQuery'],file:'analysis · revenue by borough',
+  code:`SELECT
+  z.borough,
+  COUNT(*)                         AS trips,
+  ROUND(AVG(f.fare_amount), 2)     AS avg_fare,
+  ROUND(SUM(f.total_amount), 0)    AS revenue
+FROM nyc_taxi_dev.fct_trips f
+JOIN nyc_taxi_dev.dim_location z
+  ON f.pickup_location_id = z.location_id
+GROUP BY z.borough
+ORDER BY trips DESC`}
 ];
 const stagesEl=document.getElementById('stages');
 STAGES.forEach((s,i)=>{const b=document.createElement('button');b.type='button';b.className='stage';b.setAttribute('role','tab');b.id='tab-'+s.id;b.innerHTML='<span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true">'+ICONS[s.id]+'</svg></span><b>'+s.name+'</b><small>'+s.sub+'</small>';b.addEventListener('click',()=>{stopAuto();showStage(i)});stagesEl.appendChild(b)});
-let cur=0,auto=null;
+let cur=0,auto=null;const N=STAGES.length;
 function showStage(i){cur=i;const s=STAGES[i];
  stagesEl.querySelectorAll('.stage').forEach((b,j)=>b.setAttribute('aria-selected',j===i?'true':'false'));
- document.getElementById('stage-text').innerHTML='<p class="eyebrow">Stage '+(i+1)+' of 5 · '+s.name+'</p><h3>'+s.title+'</h3><p class="muted">'+s.body+'</p><div class="tags">'+s.tags.map(t=>'<span class="tag'+(/^(SQL|Python|dbt)$/.test(t)?' hot':'')+'">'+t+'</span>').join('')+'</div>';
+ document.getElementById('stage-text').innerHTML='<p class="eyebrow">Step '+(i+1)+' of '+N+' · '+s.name+'</p><h3>'+s.title+'</h3><p class="muted">'+s.body+'</p><div class="tags">'+s.tags.map(t=>'<span class="tag'+(/^(SQL|Python|dbt|PySpark)$/.test(t)?' hot':'')+'">'+t+'</span>').join('')+'</div><a class="link-arrow" href="https://github.com/zakariaaouass/nyc-taxi-pipeline" target="_blank" rel="noopener">Read the full code ›</a>';
  document.getElementById('stage-code').innerHTML='<span class="file">'+esc(s.file)+'</span>'+hl(s.code);}
 function stopAuto(){if(auto){clearInterval(auto);auto=null}}
 showStage(0);
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches){auto=setInterval(()=>showStage((cur+1)%5),5000);}
-stagesEl.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){stopAuto();const n=(cur+(e.key==='ArrowRight'?1:4))%5;showStage(n);document.getElementById('tab-'+STAGES[n].id).focus();}});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){auto=setInterval(()=>showStage((cur+1)%N),6000);}
+stagesEl.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){stopAuto();const n=(cur+(e.key==='ArrowRight'?1:N-1))%N;showStage(n);document.getElementById('tab-'+STAGES[n].id).focus();}});
 
-/* ---------- dashboard sample data ---------- */
+/* ---------- dashboard demo (sample data) ---------- */
 let seed=20261124;const rnd=()=>{seed=(seed*1664525+1013904223)%4294967296;return seed/4294967296};
 const CITIES=[['Casablanca',1],['Rabat',.56],['Marrakech',.43],['Tanger',.36],['Agadir',.26]];
 const CATS=[['Fashion',.32,380,.09],['Home & Kitchen',.24,650,.04],['Electronics',.18,2400,.05],['Beauty',.16,220,.03],['Sports',.10,520,.04]];
 const SEAS=[.86,.9,1.08,1.0,.97,.95,1.05,1.12,.98,1.0,1.22,1.32];
 const MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const NM=48; // Nov 2022 .. Oct 2026
-const months=[];for(let m=0;m<NM;m++){const t=10+m;months.push({mi:t%12,y:2022+Math.floor(t/12)})}
+const NM=48;const months=[];for(let m=0;m<NM;m++){const t=10+m;months.push({mi:t%12,y:2022+Math.floor(t/12)})}
 const rows=[];
 for(let m=0;m<NM;m++)for(const[city,cw]of CITIES)for(const[cat,share,aov,ret]of CATS)for(const ch of['web','app']){
  const chShare=ch==='web'?.6*(1-0.006*m):.4*(1+0.012*m);
@@ -681,59 +870,40 @@ for(let m=0;m<NM;m++)for(const[city,cw]of CITIES)for(const[cat,share,aov,ret]of 
  const a=aov*(1+0.004*m)*(0.95+rnd()*0.1);
  rows.push({m,city,cat,ch,orders,rev:orders*a,ret:orders*ret*(0.8+rnd()*0.4)});
 }
-
 const st={n:12,city:'all',ch:'all',cat:null};
 const regionSel=document.getElementById('region');
 regionSel.innerHTML='<option value="all">All cities</option>'+CITIES.map(c=>'<option>'+c[0]+'</option>').join('');
-
 const fmtMAD=v=>v>=1e6?(v/1e6).toFixed(v>=1e8?0:1)+'M':v>=1e3?(v/1e3).toFixed(0)+'K':v.toFixed(0);
 const fmtInt=v=>Math.round(v).toLocaleString('en-US');
 const pct=(a,b)=>b?(a/b-1)*100:0;
 const lab=m=>MN[months[m].mi]+' '+String(months[m].y).slice(2);
-
 function filt(r,skip){return(skip==='city'||st.city==='all'||r.city===st.city)&&(st.ch==='all'||r.ch===st.ch)&&(skip==='cat'||!st.cat||r.cat===st.cat)}
 function agg(from,to,skip,key){const o={};for(const r of rows){if(r.m<from||r.m>to||!filt(r,skip))continue;const k=key?r[key]:'_';(o[k]||(o[k]={rev:0,orders:0,ret:0}));o[k].rev+=r.rev;o[k].orders+=r.orders;o[k].ret+=r.ret}return o}
-
 function render(){
  const end=NM-1,start=end-st.n+1,pEnd=start-1,pStart=pEnd-st.n+1;
- const now=agg(start,end)._||{rev:0,orders:0,ret:0},prev=agg(pStart,pEnd)._||{rev:0,orders:0,ret:0};
- const K=[
-  ['Revenue','MAD '+fmtMAD(now.rev),pct(now.rev,prev.rev),false],
-  ['Orders',fmtInt(now.orders),pct(now.orders,prev.orders),false],
-  ['Avg order value','MAD '+fmtInt(now.rev/now.orders),pct(now.rev/now.orders,prev.rev/prev.orders),false],
-  ['Return rate',(100*now.ret/now.orders).toFixed(1)+'%',(100*now.ret/now.orders)-(100*prev.ret/prev.orders),true]
- ];
+ const now=agg(start,end)._||{rev:0,orders:1,ret:0},prev=agg(pStart,pEnd)._||{rev:0,orders:1,ret:0};
+ const K=[['Revenue','MAD '+fmtMAD(now.rev),pct(now.rev,prev.rev),false],['Orders',fmtInt(now.orders),pct(now.orders,prev.orders),false],['Avg order value','MAD '+fmtInt(now.rev/now.orders),pct(now.rev/now.orders,prev.rev/prev.orders),false],['Return rate',(100*now.ret/now.orders).toFixed(1)+'%',(100*now.ret/now.orders)-(100*prev.ret/prev.orders),true]];
  document.getElementById('kpis').innerHTML=K.map(([l,v,d,inv])=>{const good=inv?d<=0:d>=0;const txt=inv?(d>=0?'+':'')+d.toFixed(1)+' pts':(d>=0?'+':'')+d.toFixed(1)+'%';return '<div class="kpi"><span>'+l+'</span><b>'+v+'</b><span class="delta '+(good?'up':'down')+'">'+(d>=0?'▲':'▼')+' '+txt+'</span></div>'}).join('');
-
- // line
  const cur=[],prv=[];const byM=agg(pStart,end,null,'m');
  for(let i=0;i<st.n;i++){cur.push((byM[start+i]||{rev:0}).rev);prv.push((byM[pStart+i]||{rev:0}).rev)}
  drawLine(cur,prv,start);
-
- // bars
  const bc=agg(start,end,'cat','cat');const list=CATS.map(c=>[c[0],(bc[c[0]]||{rev:0}).rev]).sort((a,b)=>b[1]-a[1]);const mx=Math.max(...list.map(x=>x[1]))||1;
  const bars=document.getElementById('bars');bars.classList.toggle('filtered',!!st.cat);
- bars.innerHTML=list.map(([c,v])=>'<button type="button" class="bar'+(st.cat===c?' on':'')+'" data-cat="'+c+'" aria-pressed="'+(st.cat===c)+'"><span>'+c+'</span><div class="fill"><i style="width:'+(100*v/mx).toFixed(1)+'%"></i></div><em>'+fmtMAD(v)+'</em></button>').join('');
-
- // table
+ bars.innerHTML=list.map(([c,v])=>'<button type="button" class="cbar'+(st.cat===c?' on':'')+'" data-cat="'+c+'" aria-pressed="'+(st.cat===c)+'"><span>'+c+'</span><div class="fill"><i style="width:'+(100*v/mx).toFixed(1)+'%"></i></div><em>'+fmtMAD(v)+'</em></button>').join('');
  const tc=agg(start,end,'city','city'),tp=agg(pStart,pEnd,'city','city');
  const tr=CITIES.map(c=>{const a=tc[c[0]]||{rev:0,orders:1},b=tp[c[0]]||{rev:0};return[c[0],a.rev,a.orders,a.rev/a.orders,pct(a.rev,b.rev)]}).sort((a,b)=>b[1]-a[1]);
  document.getElementById('tbl').innerHTML='<thead><tr><th>City</th><th>Revenue (MAD)</th><th>Orders</th><th>Avg order</th><th>vs prev.</th></tr></thead><tbody>'+tr.map(r=>'<tr tabindex="0" data-city="'+r[0]+'" class="'+(st.city===r[0]?'on':'')+'"><td><b>'+r[0]+'</b></td><td>'+fmtMAD(r[1])+'</td><td>'+fmtInt(r[2])+'</td><td>'+fmtInt(r[3])+'</td><td style="color:var('+(r[4]>=0?'--good':'--bad')+');font-weight:600">'+(r[4]>=0?'+':'')+r[4].toFixed(1)+'%</td></tr>').join('')+'</tbody>';
-
- // chips
  const ch=[];if(st.city!=='all')ch.push(['city',st.city]);if(st.ch!=='all')ch.push(['ch',st.ch==='web'?'Website':'Mobile app']);if(st.cat)ch.push(['cat',st.cat]);
- document.getElementById('chips').innerHTML=ch.length?'<span class="muted">Filters:</span>'+ch.map(([k,v])=>'<button type="button" class="chip" data-clear="'+k+'" aria-label="Remove filter '+v+'">'+v+' ✕</button>').join(''):'<span class="muted">Showing all cities, channels and categories · last '+st.n+' months to Oct 2026</span>';
+ document.getElementById('chips').innerHTML=ch.length?'<span class="muted">Filters:</span>'+ch.map(([k,v])=>'<button type="button" class="chip" data-clear="'+k+'" aria-label="Remove filter '+v+'">'+v+' ✕</button>').join(''):'<span class="muted">All cities, channels and categories · last '+st.n+' months to Oct 2026</span>';
  regionSel.value=st.city;document.getElementById('channel').value=st.ch;
  document.querySelectorAll('#period button').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.v===st.n?'true':'false'));
 }
-
-function nice(max){const p=Math.pow(10,Math.floor(Math.log10(max)));const s=[1,2,2.5,5,10].map(x=>x*p).find(x=>max/x<=5)||p*10;return s}
+function nice(max){const p=Math.pow(10,Math.floor(Math.log10(max)));return [1,2,2.5,5,10].map(x=>x*p).find(x=>max/x<=5)||p*10}
 function drawLine(cur,prv,start){
  const W=640,H=250,L=46,R=12,T=14,B=28,iw=W-L-R,ih=H-T-B,n=cur.length;
  const mx=Math.max(...cur,...prv)*1.08||1,step=nice(mx),top=Math.ceil(mx/step)*step;
  const x=i=>L+(n===1?iw/2:i*iw/(n-1)),y=v=>T+ih-(v/top)*ih;
- let g='';for(let v=0;v<=top+1e-6;v+=step){g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v)+'" y2="'+y(v)+'"/>'}
- let yl='';for(let v=0;v<=top+1e-6;v+=step){yl+='<text x="'+(L-8)+'" y="'+(y(v)+4)+'" text-anchor="end">'+fmtMAD(v)+'</text>'}
+ let g='',yl='';for(let v=0;v<=top+1e-6;v+=step){g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v)+'" y2="'+y(v)+'"/>';yl+='<text x="'+(L-8)+'" y="'+(y(v)+4)+'" text-anchor="end">'+fmtMAD(v)+'</text>'}
  const every=n>12?3:n>6?2:1;let xl='';for(let i=0;i<n;i+=every){xl+='<text x="'+x(i)+'" y="'+(H-8)+'" text-anchor="middle">'+lab(start+i)+'</text>'}
  const path=a=>a.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ');
  const area=path(cur)+' L'+x(n-1)+' '+(T+ih)+' L'+x(0)+' '+(T+ih)+' Z';
@@ -747,17 +917,15 @@ function drawLine(cur,prv,start){
  hov.addEventListener('pointermove',move);hov.addEventListener('pointerdown',move);
  hov.addEventListener('pointerleave',()=>{tip.hidden=true;hx.setAttribute('opacity','0');hd.setAttribute('opacity','0')});
 }
-
 document.getElementById('period').addEventListener('click',e=>{const b=e.target.closest('button');if(b){st.n=+b.dataset.v;render()}});
 regionSel.addEventListener('change',e=>{st.city=e.target.value;render()});
 document.getElementById('channel').addEventListener('change',e=>{st.ch=e.target.value;render()});
-document.getElementById('bars').addEventListener('click',e=>{const b=e.target.closest('.bar');if(b){st.cat=st.cat===b.dataset.cat?null:b.dataset.cat;render()}});
+document.getElementById('bars').addEventListener('click',e=>{const b=e.target.closest('.cbar');if(b){st.cat=st.cat===b.dataset.cat?null:b.dataset.cat;render()}});
 const tbl=document.getElementById('tbl');
 const pickCity=e=>{const r=e.target.closest('tr[data-city]');if(r){st.city=st.city===r.dataset.city?'all':r.dataset.city;render()}};
 tbl.addEventListener('click',pickCity);tbl.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pickCity(e)}});
 document.getElementById('chips').addEventListener('click',e=>{const b=e.target.closest('[data-clear]');if(!b)return;const k=b.dataset.clear;if(k==='city')st.city='all';if(k==='ch')st.ch='all';if(k==='cat')st.cat=null;render()});
 render();
-
 const SQL=`-- models/marts/fct_sales_monthly.sql
 -- Feeds every tile on this dashboard
 
@@ -789,14 +957,15 @@ sqlBox.innerHTML=hl(SQL);
 sqlBtn.addEventListener('click',()=>{sqlBox.hidden=!sqlBox.hidden;sqlBtn.setAttribute('aria-expanded',String(!sqlBox.hidden));sqlBtn.textContent=sqlBox.hidden?'Show the dbt model':'Hide the dbt model'});
 
 /* ---------- skills ---------- */
-const SK={'Data engineering':['SQL','Python','dbt','Spark','Scala','Kafka','Airflow','Hadoop / HDFS','Hive','HBase','YARN','Oozie','Talend','Flume','Elasticsearch','PL/SQL','Java'],
- 'Databases':['PostgreSQL','Oracle','SQL Server','MySQL','Snowflake'],
- 'Analytics & BI':['Power BI','Plotly Dash','pandas','NumPy','Matplotlib','Statistics','Time series'],
- 'Cloud & DevOps':['Azure','AWS','Docker','Kubernetes','Git','GitLab','GitHub','Jira'],
- 'Machine learning':['scikit-learn','TensorFlow','Keras','LSTM / CNN','NLP','R']};
+const SK={'Core':['SQL','Python','dbt'],
+ 'Pipelines':['Airflow','Spark / PySpark','Scala','Kafka','Databricks','Delta Lake','Hadoop / HDFS','Hive','Oozie','Talend','Elasticsearch'],
+ 'Warehouses & databases':['BigQuery','Snowflake','PostgreSQL','Oracle','SQL Server','MySQL','MongoDB'],
+ 'Dashboards':['Looker Studio','Power BI','Plotly Dash','pandas'],
+ 'Cloud & DevOps':['Google Cloud','Azure','AWS','Docker','Kubernetes','GitHub Actions','Jenkins','Linux','Git'],
+ 'Machine learning':['Spark MLlib','scikit-learn','TensorFlow / Keras']};
 const groups=['All',...Object.keys(SK)];const fEl=document.getElementById('skill-filter'),gEl=document.getElementById('skill-grid');
 fEl.innerHTML=groups.map((g,i)=>'<button type="button" data-g="'+g+'" aria-pressed="'+(i===0)+'">'+g+'</button>').join('');
-gEl.innerHTML=Object.entries(SK).flatMap(([g,l])=>l.map(s=>'<span class="skill" data-g="'+g+'">'+s+'</span>')).join('');
+gEl.innerHTML=Object.entries(SK).flatMap(([g,l])=>l.map(s=>'<span class="skill'+(g==='Core'?' core':'')+'" data-g="'+g+'">'+s+'</span>')).join('');
 fEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const g=b.dataset.g;fEl.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));gEl.querySelectorAll('.skill').forEach(s=>s.classList.toggle('dim',g!=='All'&&s.dataset.g!==g))});
 
 /* ---------- contact ---------- */
@@ -804,8 +973,10 @@ const toast=document.getElementById('toast');let tt;
 const say=m=>{toast.textContent=m;clearTimeout(tt);tt=setTimeout(()=>toast.textContent='',2600)};
 function selectText(el){try{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)}catch(e){}}
 function copy(text,fallbackEl,btn,label){
- const done=()=>{if(btn){const o=btn.textContent;btn.textContent=label||'Copied';setTimeout(()=>btn.textContent=o,1800)}};
- try{navigator.clipboard.writeText(text).then(done,()=>{if(fallbackEl){fallbackEl.focus&&fallbackEl.focus();fallbackEl.select?fallbackEl.select():selectText(fallbackEl)}if(btn)btn.textContent='Press Ctrl+C'})}catch(e){if(fallbackEl)selectText(fallbackEl)}
+ const orig=btn?btn.textContent:'';
+ const done=()=>{if(btn){btn.textContent=label||'Copied';setTimeout(()=>btn.textContent=orig,1800)}};
+ const fail=()=>{if(fallbackEl){if(fallbackEl.select)fallbackEl.select();else selectText(fallbackEl)}if(btn){btn.textContent='Press Ctrl+C';setTimeout(()=>btn.textContent=orig,2400)}};
+ try{navigator.clipboard.writeText(text).then(done,fail)}catch(e){fail()}
 }
 document.getElementById('copy-email').addEventListener('click',e=>copy('zakariaaouass22@gmail.com',document.getElementById('email'),e.currentTarget));
 const fName=document.getElementById('f-name'),fType=document.getElementById('f-type'),fMsg=document.getElementById('f-msg'),send=document.getElementById('send-brief');
